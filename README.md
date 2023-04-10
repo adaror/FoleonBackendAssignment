@@ -12,16 +12,16 @@ While creating Documents, you also pass list of Elements reflecting the type and
 
 ## Design
 
-<img src="https://i.postimg.cc/bNCWJK4j/Foleon.jpg" width="400">
+<img src="https://i.postimg.cc/bNCWJK4j/Foleon.jpg" width="800">
 
-[Explanation:]
-[Projects table:] This table will store information about each project. Each project will have a unique ID, name, creation date, and any other relevant attributes. The ID will serve as the primary key for this table. 
+** Explanation **
+**Projects table:** This table will store information about each project. Each project will have a unique ID, name, creation date, and any other relevant attributes. The ID will serve as the primary key for this table. 
 
-[Documents table:] This table will store information about each document associated with a project. Each document will have a unique ID, name, creation and update date, and any other relevant attributes. 
+**Documents table:** This table will store information about each document associated with a project. Each document will have a unique ID, name, creation and update date, and any other relevant attributes. 
 
-[Elements table:] This table will store information about each element associated with a document. Each element will have a unique ID, type (Button, Image or Text) and any other relevant attributes. 
+**Elements table** This table will store information about each element associated with a document. Each element will have a unique ID, type (Button, Image or Text) and any other relevant attributes. 
 
-[DocumentElements table:]
+**DocumentElements table:**
 By using the DocumentElements table, we can represent the many-to-many relationship between documents and elements while also preserving the order of the elements within each document.
 
 ## Installation
