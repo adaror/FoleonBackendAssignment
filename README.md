@@ -6,9 +6,7 @@
 
 ## Description
 
-In this project I designed a service responsible for 3 entities - Projects, documents and Elements.
-This is a POC, In this project I implemented routes for creating, updated and deleting new Projects and the same for Documents.
-While creating Documents, you also pass list of Elements reflecting the type and the order of elements in each Document.
+In this project, I designed a service that is responsible for three entities: Projects, Documents, and Elements. This is a proof-of-concept project, and I implemented routes for creating, updating, and deleting new Projects and Documents. When creating Documents, you also pass a list of Elements that reflects the type and order of elements in each Document.
 
 ## Design
 
@@ -34,9 +32,7 @@ This structure should be scalable and efficient, allowing you to easily add new 
 ## Installation
 
 **PostgreSQL**
-In order to run (other than docker),
-you need to have an local DB by PostgreSQL with a table call foleonDB,
-but don't worry, I prepare docker instance that will run it for you :)
+To run this application (other than in Docker), you need to have a local PostgreSQL database with a table called 'foleonDB'. But don't worry, I have prepared a Docker instance that will run it for you :)
 
 ## Running the app
 Run the following line and you all set to go!
@@ -66,8 +62,7 @@ $ http://localhost:3000/api
 
 ## What we can talk about?
 
-Well there are so many different ways to implement this project, and there are many ways to implement each function, databases calls, using caching etc.
-I would love to share my thought and talk deeper about what I could do better, how it was possible to take it to the next level, and other questions and solutions I had in mind.
+There are numerous approaches to implementing this project, with various options for implementing each function, such as utilizing database calls, caching, and so on. I would be delighted to share my insights and engage in a discussion on how I could have enhanced the implementation to take it to the next level. Additionally, I would be pleased to explore any questions or solutions that I had considered.
 
 ## Hope you like it :)
 
