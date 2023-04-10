@@ -38,29 +38,13 @@ In order to run (other than docker),
 you need to have an local DB by PostgreSQL with a table call foleonDB,
 but don't worry, I prepare docker instance that will run it for you :)
 
-```bash
-$ npm install
-```
-
 ## Running the app
-
+Run the following line and you all set to go!
 ```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+$ docker-compose up
 ```
 
 ## Test
-
-```bash
-# unit tests
-$ npm run test
-```
 
 For now I did unit test for project and documents services - so you it's better to run the scripts:
 
@@ -69,4 +53,22 @@ For now I did unit test for project and documents services - so you it's better 
 $ npm run test documents.service.spec.ts
 $ npm run test projects.service.spec.ts --watch
 ```
+
+## Extra comment
+
+Because it's a POC, when the app will start automatically 3 elements will create in the data base - button, image and text,
+then you can go to swagger to test this api!!
+
+go to:
+```bash
+$ http://localhost:3000/api
+```
+
+## What we can talk about?
+
+Well there are so many different ways to implement this project, and there are many ways to implement each function, databases calls, using caching etc.
+I would love to share my thought and talk deeper about what I could do better, how it was possible to take it to the next level, and other questions and solutions I had in mind.
+
+## Hope you like it :)
+
 
