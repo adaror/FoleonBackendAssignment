@@ -12,9 +12,10 @@ While creating Documents, you also pass list of Elements reflecting the type and
 
 ## Design
 
-<img src="https://i.postimg.cc/bNCWJK4j/Foleon.jpg" width="800">
+<img src="https://i.postimg.cc/bNCWJK4j/Foleon.jpg" width="800" />
 
-** Explanation **
+**Explanation**
+
 **Projects table:** This table will store information about each project. Each project will have a unique ID, name, creation date, and any other relevant attributes. The ID will serve as the primary key for this table. 
 
 **Documents table:** This table will store information about each document associated with a project. Each document will have a unique ID, name, creation and update date, and any other relevant attributes. 
@@ -24,7 +25,18 @@ While creating Documents, you also pass list of Elements reflecting the type and
 **DocumentElements table:**
 By using the DocumentElements table, we can represent the many-to-many relationship between documents and elements while also preserving the order of the elements within each document.
 
+**Why is it scalable?**
+With this structure, we can represent the relationships between projects, documents, and elements. Each project can have multiple documents, and each document can have multiple elements. The DocumentElements table stores the relationship between documents and elements, including the order of the elements within a document.
+When fetching a document, we can join the Documents table with the DocumentElements table and the Elements table to retrieve all the elements for that document in the correct order.
+This structure should be scalable and efficient, allowing you to easily add new projects, documents, and elements as needed, and to retrieve documents and their associated elements quickly and accurately.
+
+
 ## Installation
+
+**PostgreSQL**
+In order to run (other than docker),
+you need to have an local DB by PostgreSQL with a table call foleonDB,
+but don't worry, I prepare docker instance that will run it for you :)
 
 ```bash
 $ npm install
@@ -48,24 +60,13 @@ $ npm run start:prod
 ```bash
 # unit tests
 $ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
 ```
 
-## Support
+For now I did unit test for project and documents services - so you it's better to run the scripts:
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+```bash
+# unit tests
+$ npm run test documents.service.spec.ts
+$ npm run test projects.service.spec.ts --watch
+```
 
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
