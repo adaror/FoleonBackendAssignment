@@ -32,7 +32,7 @@ This structure should be scalable and efficient, allowing you to easily add new 
 ## Installation
 
 **PostgreSQL**
-To run this application (other than in Docker), you need to have a local PostgreSQL database with a table called 'foleonDB'. But don't worry, I have prepared a Docker instance that will run it for you :)
+To run this application (other than in Docker), you need to have a local PostgreSQL database with a table called 'foleonDB'. But don't worry, I have prepared a Docker image that will run it for you :)
 
 ## Running the app
 Run the following line and you all set to go!
