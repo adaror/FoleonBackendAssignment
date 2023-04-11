@@ -47,7 +47,7 @@ For now I did unit test for project and documents services - so you it's better 
 ```bash
 # unit tests
 $ npm run test documents.service.spec.ts
-$ npm run test projects.service.spec.ts --watch
+$ npm run test projects.service.spec.ts
 ```
 
 ## Extra comment
