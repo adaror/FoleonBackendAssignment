@@ -39,6 +39,10 @@ Run the following line and you all set to go!
 ```bash
 $ docker-compose up
 ```
+Or you can download the full docker image from my docker hub
+```bash
+$ docker pull adaror/foleon-assessment_api:latest
+```
 I also added the .env file because this project is not sensitive, of cures that normally I would never upload this file to git.
 ## Test
 
